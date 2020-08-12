@@ -1,2 +1,2 @@
 # SortingVisualizer
-Sorting visualozer developed using Angular 9
+Sorting visualizer developed using Angular 9
