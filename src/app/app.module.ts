@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { SortingVisualizerComponent } from './sorting-visualizer/sorting-visualizer.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SortingVisualizerComponent,
+
   ],
   imports: [
     BrowserModule

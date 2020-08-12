@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="button">
+            <button class="btn btn-primary" (click)="resetArray()">Gernerate new Array</button>
+        </div>
+
+        <div class="button">
+            <button class="btn btn-primary" (click)="bubbleSort(rArray)">Bubble Sort</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="array-container">
+    <div class="array-bar" *ngFor="let array of rArray" [style.height.px]="array">
+    </div>
+</div>

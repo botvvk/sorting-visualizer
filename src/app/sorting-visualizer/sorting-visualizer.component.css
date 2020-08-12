@@ -1,0 +1,21 @@
+
+
+.array-container{
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    margin-top: 50px;
+}
+
+.array-bar{
+    width: 3px;
+    height: 30px;
+    background-color: aqua;
+    display: inline-block;
+    margin: 0 1px;
+    padding-right : 20px ;
+}
+.button{
+    padding-top: 10px;
+    padding-left: 10px;
+}
