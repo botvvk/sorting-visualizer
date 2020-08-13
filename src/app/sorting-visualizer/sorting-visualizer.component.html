@@ -7,11 +7,14 @@
         <div class="button">
             <button class="btn btn-primary" (click)="bubbleSort(rArray)">Bubble Sort</button>
         </div>
+
     </div>
 </div>
 
 
 <div class="array-container">
-    <div class="array-bar" *ngFor="let array of rArray" [style.height.px]="array">
+    <div>
+        <div class="array-bar" *ngFor="let array of rArray; let i=index" [style.height.px]="array"
+            [ngClass]="{bar : i===index }"></div>
     </div>
 </div>

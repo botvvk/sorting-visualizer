@@ -4,7 +4,7 @@
     position: absolute;
     left: 100px;
     right: 100px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .array-bar{
@@ -18,4 +18,10 @@
 .button{
     padding-top: 10px;
     padding-left: 10px;
+}
+.bar{
+    background-color: red;
+}
+.bar2{
+    background-color:orange;
 }

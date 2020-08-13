@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortingVisualizerComponent implements OnInit {
   rArray = [];
+  index
   constructor() { }
 
   ngOnInit(): void {
@@ -19,10 +20,11 @@ export class SortingVisualizerComponent implements OnInit {
     this.rArray = [];
     let i: number;
     for (i = 0; i < 50; i++) {
-      this.rArray.push(this.randomNum(5, 500));
+      this.rArray.push(this.randomNum(20, 500));
 
     }
     console.log(this.rArray)
+    this.index = 10000
   };
 
   async bubbleSort(rArray) {
@@ -39,13 +41,17 @@ export class SortingVisualizerComponent implements OnInit {
         }
       };
     };
+    this.index = 10000
   };
 
   async swap(array, j) {
-    await this.sleep(10)
+    await this.sleep(20)
     let temp = array[j]
     array[j] = array[j + 1]
     array[j + 1] = temp
+    // color
+
+    this.index = j + 1
   };
 
   randomNum(min, max) {
@@ -55,4 +61,6 @@ export class SortingVisualizerComponent implements OnInit {
   sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
   }
+
+
 }
